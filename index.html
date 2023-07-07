@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Swiper css-->
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <!--Font awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Barber Shop</title>
+</head>
+
+<body>
+    <!--Social Networks-->
+    <div class="fixed__contact">
+        <a href="https://www.facebook.com/" target="_blank"><span> <i class="fa-brands fa-facebook-f"></i> </span> </a>
+        <a href="https://www.instagram.com/" target="_blank"><span> <i class="fa-brands fa-instagram"></i> </span> </a>
+        <a href="https://www.tiktok.com/" target="_blank"><span> <i class="fa-brands fa-tiktok"></i> </span> </a>
+        <a href="https://www.youtube.com/" target="_blank"><span> <i class="fa-brands fa-youtube"></i> </span> </a>
+    </div>
+    <!--Social Networks end-->
+
+    <!--Hero-->
+    <section class="relative">
+        <!--Navbar-->
+        <nav class="fixed top-0 left-0 right-0 z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between ">
+                    <div class="flex items-center">
+                        <a href="#" class="logo">
+                            <img src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex md:hidden">
+                        <button id="menu-toggle"
+                            class="text-gray-300 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 px-3 py-2 rounded-md"
+                            aria-label="Menu">
+                            <i class="fa-solid fa-scissors"></i>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden md:block">
+                        <ul class="flex space-x-4">
+                            <li><a href="#about"
+                                    class="text-white text-xl hover:bg-gray-700 px-3 py-2 rounded-md">About</a>
+                            </li>
+                            <li><a href="#services"
+                                    class="text-white  text-xl hover:bg-gray-700 px-3 py-2 rounded-md">Services</a></li>
+                            <li><a href="#portfolio"
+                                    class="text-white text-xl hover:bg-gray-700 px-3 py-2 rounded-md">Portfolio</a></li>
+                            <li><a href="#contact"
+                                    class="text-white text-xl hover:bg-gray-700 px-3 py-2 rounded-md">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:hidden bg-grey-800" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1  sm:px-3">
+                    <a href="#about"
+                        class="text-white text-xl text-center hover:bg-gray-700 block px-3 py-2 rounded-md">About</a>
+                    <a href="#services"
+                        class="text-white text-xl  text-center hover:bg-gray-700 block px-3 py-2 rounded-md">Services</a>
+                    <a href="#portfolio"
+                        class="text-white text-xl text-center hover:bg-gray-700 block px-3 py-2 rounded-md">Portfolio</a>
+                    <a href="#contact"
+                        class="text-white text-xl text-center hover:bg-gray-700 block px-3 py-2 rounded-md">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end -->
+
+        <section class="hero relative">
+            <div class="hero-video">
+                <video autoplay loop muted>
+                    <source src="./assets/img/Untitled design.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay absolute inset-0 flex items-center">
+                    <div class="container mx-auto ">
+                        <div class="hero-content">
+                            <h1 class="text-6xl font-bold text-white mb-4">Experience the Art of Barbering</h1>
+                            <p class="text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Asperiores, saepe? Tenetur quo sed ipsa nostrum magnam odio aut iure blanditiis!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--Hero end-->
+
+
+    <!--About-->
+    <section id="about" class="bg-white about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0 ">
+                    <div class="about-us-img">
+                        <img src="./assets/img/delfina-pan-wJoB8D3hnzc-unsplash.jpg" alt="Barber">
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Meet Our Skilled Barber</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">With over 10 years of experience in the
+                        industry, our barber is dedicated to providing exceptional grooming services. His passion for
+                        the craft shines through in every haircut he creates.</p>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">Specializing in modern and classic hairstyles,
+                        he has mastered various techniques and keeps up with the latest trends to offer his clients the
+                        best styles that suit their individual preferences and features.</p>
+                    <p class="text-xl text-gray-600 leading-relaxed">His attention to detail and commitment to client
+                        satisfaction make each visit to our barbershop a memorable experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About end-->
+
+    <!--Services-->
+    <section id="services" class="bg-gray-100 services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-8">Services Offered</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="service-img">
+                        <img src="./assets/img/Haircuts.jpg" alt="Haircut"
+                            class="w-full transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Haircuts</h3>
+                        <p class="text-gray-600 leading-relaxed">Experience a precision haircut tailored to your unique
+                            style and preferences. Our barber will carefully craft the perfect cut that suits your face
+                            shape and showcases your personality.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="service-img">
+                        <img src="./assets/img/Beard Trims.jpg" alt="Beard Trims"
+                            class="w-full transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Beard Trims</h3>
+                        <p class="text-gray-600 leading-relaxed">Maintain a well-groomed and stylish beard with our
+                            expert beard trimming service. Our barber will shape and sculpt your beard, ensuring clean
+                            lines and a polished look.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="service-img">
+                        <img src="./assets/img/Shaves.jpg" alt="Shave"
+                            class="w-full transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Shaves</h3>
+                        <p class="text-gray-600 leading-relaxed">Indulge in a luxurious traditional shave experience.
+                            Our barber will provide a close and comfortable shave using high-quality products and
+                            techniques, leaving your skin smooth and refreshed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services end-->
+
+
+    <!--Portfolio-->
+    <section id="portfolio" class=" portfolio bg-[url('./assets/img/port-bg.jpg')] bg-cover bg-no-repeat">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-8">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/1.jpg">
+                    <img src="./assets/img/portfolio/1.jpg" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/2.jpg">
+                    <img src="./assets/img/portfolio/2.jpg" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/3.jpg">
+                    <img src="./assets/img/portfolio/3.jpg" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/4.jpg">
+                    <img src="./assets/img/portfolio/4.jpg" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/5.webp">
+                    <img src="./assets/img/portfolio/5.webp" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+                <a data-fslightbox="gallery" class="gallery-item" href="./assets/img/portfolio/6.jpg">
+                    <img src="./assets/img/portfolio/6.jpg" alt="Gallery Image" class="w-full h-full object-cover">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4 class="overlay-title">Style Name</h4>
+                            <p class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+    <!--Portfolio end-->
+
+    <!--Testimonials-->
+    <section class="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-8">Testimonials</h2>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/2.jpg" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/3.jpg" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!" lorem50</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/4.jpg" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/5.webp" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="./assets/img/portfolio/6.jpg" alt="Author">
+                                </div>
+                                <div class="author-details">
+                                    <h3 class="author-name">John Doe</h3>
+                                    <span class="author-title">Manager</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"I've been going to the barber for years, and I can
+                                confidently say that this barber is the best. The attention to detail and the
+                                quality of their work is unmatched. Highly recommended!"</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonials end-->
+
+
+    <!--Footer-->
+    <footer id="contact" class="bg-gray-800 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">About Us</h3>
+                    <p class="text-sm">We are a team of skilled barbers dedicated to providing exceptional grooming
+                        services and creating unique styles.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Opening Hours</h3>
+                    <p class="text-sm">Monday - Friday: 9:00 AM - 7:00 PM</p>
+                    <p class="text-sm">Saturday: 10:00 AM - 6:00 PM</p>
+                    <p class="text-sm">Sunday: Closed</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact</h3>
+                    <p class="text-sm"><span class="font-bold">Phone:</span> +1 123 456 789</p>
+                    <p class="text-sm"><span class="font-bold">Email:</span> info@example.com</p>
+                    <p class="text-sm"><span class="font-bold">Address:</span> 123 Barber Street, City, Country</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-gray-400">
+                            <i class="fa-brands fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-gray-400">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-gray-400">
+                            <i class="fa-brands fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-gray-400">
+                            <i class="fa-brands fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-600">
+            <p class="text-center text-sm">© 2023 Barber Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--Footer end-->
+
+
+    <!-- Swiper -->
+    <script src="./assets/js/swiper.js"></script>
+    <!-- Fslightbox -->
+    <script src="./assets/js/fslightbox.js"></script>
+    <!--Jquery-->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
